@@ -1,0 +1,51 @@
+cgminer (3.3.1-1) unstable; urgency=low
+
+  * New upstream release
+  * Install miner.php to /usr/share/cgminer so users can use a web
+    interface to control cgminer
+  * Install api interface examples (C, python, java, php) to
+    /usr/share/doc/cgminer/examples
+  * Install cgminer-api command to interface with cgminer when run with
+    --api-listen command line argument (See /usr/share/doc/API-README)
+
+ -- Scott Howard <showard@debian.org>  Sat, 06 Jul 2013 14:03:50 -0400
+
+cgminer (3.2.2-1) unstable; urgency=low
+
+  * New upstream release
+  * Install 01-cgminer.rules to /etc/udev/rules.d/ so ASIC mining
+    devices are detected
+
+ -- Scott Howard <showard@debian.org>  Mon, 24 Jun 2013 17:18:27 -0400
+
+cgminer (3.2.0-2) unstable; urgency=low
+
+  * cpu mining is disabled, no need to build arch-specific manpages
+    - added debian/cgminer.1
+    - dropped B-D on help2man, yasm
+
+ -- Scott Howard <showard@debian.org>  Mon, 03 Jun 2013 11:30:02 -0400
+
+cgminer (3.2.0-1) unstable; urgency=low
+
+  [ Dmitry Smirnov ]
+  * New upstream release [April 2013] 3.0.1
+  * Removed CPU mining from package description (no longer supported).
+  * Dropped unsupported build option "--enable-cpumining".
+  * Added "--enable-avalon" configure option.
+  * Build-Depends on "libudev-dev [!kfreebsd-any]" to allow building on
+    kfreebsd without "libudev-dev".
+  * Build man page automatically (Closes: #705703).
+    + "help2man" added to Build-Depends.
+
+  [ Scott Howard ]
+  * Newer upstream release, 3.2.0
+  * Added "--enable-bflsc" configure option
+
+ -- Scott Howard <showard@debian.org>  Sat, 01 Jun 2013 14:56:37 -0400
+
+cgminer (2.11.3-1) unstable; urgency=low
+
+  * Initial release (Closes: #703728).
+
+ -- Dmitry Smirnov <onlyjob@debian.org>  Thu, 28 Mar 2013 14:46:51 +1100

@@ -1,0 +1,3 @@
+01-cgminer.rules lib/udev/rules.d
+miner.php usr/share/cgminer
+cgminer-api usr/bin
