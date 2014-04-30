@@ -1,3 +1,10 @@
+cgminer (3.7.2+gc3355-1) unstable; urgency=low
+
+  * Initial packaging for cgminer-gc3355, forked from
+    git://github.com/dtbartle/cgminer-gc3355.git
+
+ -- Ryan Tucker <rtucker@gmail.com>  Tue, 29 Apr 2013 20:29:38 -0400
+
 cgminer (3.3.1-1) unstable; urgency=low
 
   * New upstream release
